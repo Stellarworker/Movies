@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_details_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/fragment_details_loading_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/fragment_details_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/fragment_details_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fragment_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/fragment_details_title_margin_horizontal"
+                android:layout_marginTop="@dimen/fragment_details_title_margin_top"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_details_title_text_size" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fragment_details_poster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fragment_details_poster_margin_top"
+                android:scaleType="centerInside" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fragment_details_full_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/fragment_details_common_margin_start"
+                android:text="@string/fragment_details_full_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_details_text_size" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fragment_details_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/fragment_details_common_margin_start"
+                android:text="@string/fragment_details_rank"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_details_text_size" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fragment_details_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/fragment_details_common_margin_start"
+                android:text="@string/fragment_details_year"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_details_text_size" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fragment_details_crew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/fragment_details_common_margin_start"
+                android:text="@string/fragment_details_crew"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_details_text_size" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fragment_details_imdb_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/fragment_details_common_margin_start"
+                android:text="@string/fragment_details_imdb_rating"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_details_text_size" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fragment_details_imdb_rating_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/fragment_details_common_margin_start"
+                android:text="@string/fragment_details_imdb_rating"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fragment_details_text_size" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
