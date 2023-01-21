@@ -1,3 +1,25 @@
 <resources>
+
+    <!-- Common begin -->
     <string name="app_name">Movies</string>
+    <!-- Common end -->
+
+    <!-- MainFragment begin -->
+    <string name="fragment_main_header">Top 250 Movies</string>
+    <!-- MainFragment end -->
+
+    <!-- DetailsFragment begin -->
+    <string name="fragment_details_full_title">Full title: %1$s</string>
+    <string name="fragment_details_rank">Rank: %1$s</string>
+    <string name="fragment_details_year">Year: %1$s</string>
+    <string name="fragment_details_crew">Crew: %1$s</string>
+    <string name="fragment_details_imdb_rating">IMDB Rating: %1$s</string>
+    <string name="fragment_details_imdb_rating_count">IMDB Rating count: %1$s</string>
+    <!-- DetailsFragment end -->
+
+    <!-- Messages begin -->
+    <string name="message_network_error">Network error!</string>
+    <string name="message_data_corrupted">Data corrupted!</string>
+    <!-- Messages end -->
+
 </resources>
